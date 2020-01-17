@@ -66,9 +66,11 @@ def team_names
 end
 
 def player_numbers(team_name)
+  player_numbers = []
   game_hash.each { |key, team_hash|
-
-
-    }
-
+      team_hash[:players].each { |player|
+        player_numbers << player[:number]
+      }
+   }
+   player_numbers.sort
 end
