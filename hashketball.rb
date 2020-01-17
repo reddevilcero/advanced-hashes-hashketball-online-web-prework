@@ -111,5 +111,5 @@ def most_points_scored
         end
       }
    }
-   p player
+  p points
 end
