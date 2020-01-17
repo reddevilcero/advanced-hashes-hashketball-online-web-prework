@@ -114,4 +114,3 @@ def most_points_scored
    }
   best_player
 end
-
