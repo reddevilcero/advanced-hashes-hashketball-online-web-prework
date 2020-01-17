@@ -108,8 +108,7 @@ def most_points_scored
       team_hash[:players].each { |player|
         if player[:points] > points
           points = player[:points]
-          player = player[:player_name]
-        end
+          player = player
       }
    }
    p points
