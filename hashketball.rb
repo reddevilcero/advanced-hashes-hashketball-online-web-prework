@@ -116,12 +116,5 @@ def most_points_scored
 end
 
 def winning_team
-  home_points = 0
-  away_points = 0
-  game_hash.each { |key, team_hash|
-     p team_hash.key(team_hash)
-      # team_hash[:players].each { |player|
-      #   home_points player[:points]
-      # }
-   }
+  home_points = game_hash[:home][:player]
 end
