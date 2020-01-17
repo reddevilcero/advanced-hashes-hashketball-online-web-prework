@@ -93,6 +93,7 @@ def big_shoe_rebounds
   game_hash.each { |key, team_hash|
       team_hash[:players].each { |player|
         if player[:shoe] > big_shoe
+          big_shoe = player[:shoe]
           rebounds = player[:rebounds]
         end
       }
