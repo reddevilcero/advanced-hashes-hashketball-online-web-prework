@@ -68,7 +68,7 @@ end
 def player_numbers(team_name)
   player_numbers = []
   game_hash.each { |key, team_hash|
-    if team_hash[:team_name] == team
+    if team_hash[:team_name] == team_name
       team_hash[:players].each { |player|
       player_numbers << player[:number]
       }
