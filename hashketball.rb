@@ -35,7 +35,9 @@ def num_points_scored(player_name)
   game_hash.each { |key, team_hash|
 
       team_hash[:players].each { |player|
-        p player[:player_name] == player_name
+        if player[:player_name] == player_name
+          puts 'hola'
+        end
       }
    }
 
