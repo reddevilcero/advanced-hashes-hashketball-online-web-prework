@@ -111,6 +111,5 @@ def most_points_scored
           player = player
       }
    }
-   p points
   player
 end
