@@ -119,8 +119,6 @@ def winning_team
   home_points = 0
   away_points = 0
   game_hash.each { |key, team_hash|
-    if game_hash[key] == :home
-      p team_hash
-    end
+    p key
    }
 end
