@@ -34,7 +34,7 @@ def num_points_scored(player_name)
 
   game_hash.each { |key, team_hash|
 
-    p team_hash[:players][:player_name]
+    p team_hash[:players]
    }
 
 end
