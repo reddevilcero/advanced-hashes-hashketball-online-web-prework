@@ -54,7 +54,7 @@ def team_colors(team)
   game_hash.each { |key, team_hash|
 
       p team_hash
-      
+
     }
-  
+
 end
