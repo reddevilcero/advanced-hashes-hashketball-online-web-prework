@@ -36,7 +36,7 @@ def num_points_scored(player_name)
 
       team_hash[:players].each { |player|
         if player[:player_name] == player_name
-          returns player[:points]
+          return player[:points]
         end
       }
    }
