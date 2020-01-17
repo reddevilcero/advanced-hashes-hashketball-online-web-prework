@@ -116,5 +116,6 @@ def most_points_scored
 end
 
 def winning_team
-  home_points = game_hash[:home][:player]
+  home_points = game_hash[:home][:players]
+  p home_points
 end
