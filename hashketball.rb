@@ -119,6 +119,6 @@ def winning_team
   home_points = 0
   away_points = 0
   game_hash.each { |key, team_hash|
-    p key
+    p game_hash
    }
 end
