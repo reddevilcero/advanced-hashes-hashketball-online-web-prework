@@ -103,12 +103,12 @@ end
 
 def most_points_scored
   points= 0
-  player = nil
   game_hash.each { |key, team_hash|
       team_hash[:players].each { |player|
         if player[:points] > points
           points = player[:points]
           player = player
+        end
       }
    }
   player
