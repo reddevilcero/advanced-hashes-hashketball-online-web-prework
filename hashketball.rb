@@ -55,6 +55,7 @@ def team_colors(team)
 
       if team_hash[:team_name] == team
         return team_hash[:colors]
+      end
 
     }
 
