@@ -119,10 +119,8 @@ def winning_team
   home_points = 0
   away_points = 0
   game_hash.each { |key, team_hash|
-      team_hash[:players].each { |player|
-        if game_hash[key] == :home
-          p team_hash
-        end
-      }
+    if game_hash[key] == :home
+      p team_hash
+    end
    }
 end
