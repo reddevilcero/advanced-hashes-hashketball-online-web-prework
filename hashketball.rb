@@ -106,9 +106,9 @@ def most_points_scored
   player = nil
   game_hash.each { |key, team_hash|
       team_hash[:players].each { |player|
-        if player[:shoe] > big_shoe
-          big_shoe = player[:shoe]
-          rebounds = player[:rebounds]
+        if player[:points] > points
+          points = player[:points]
+          player = player[:player_name]
         end
       }
    }
