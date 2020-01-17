@@ -81,9 +81,21 @@ def player_stats(player_name)
   game_hash.each { |key, team_hash|
       team_hash[:players].each { |player|
         if player[:player_name] == player_name
-          return player.select{ |key, value| value != player_name}
+          return player.select{ |key, value| value != player_name} # filter the name to don't include the player name
         end
       }
    }
+end
 
+def big_shoe_rebounds
+  big_shoe = 0
+  rebounds = 0
+  game_hash.each { |key, team_hash|
+      team_hash[:players].each { |player|
+        if player[:shoe] > big_shoe
+          rebounds = player[:rebounds]
+        end
+      }
+   }
+  rebounds
 end
